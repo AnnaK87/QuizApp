@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Question {
+struct Question {
     private (set) public var question: String
     private (set) public var answer: Bool
     

@@ -39,7 +39,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 13" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svA-1m-9na">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svA-1m-9na">
                                 <rect key="frame" x="288" y="590" width="71" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="71" id="VQV-Zc-tdj"/>
@@ -62,14 +62,20 @@
                                         <state key="normal" title="True">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="answerBtnPresed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NAf-bg-uN2"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSY-JO-Dh9" customClass="Button" customModule="QuizApp" customModuleProvider="target">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSY-JO-Dh9" customClass="Button" customModule="QuizApp" customModuleProvider="target">
                                         <rect key="frame" x="158" y="0.0" width="115" height="46"/>
                                         <color key="backgroundColor" red="0.82691540420101528" green="0.095464428405415316" blue="0.0023480091117136777" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="19"/>
                                         <state key="normal" title="False">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="answerBtnPresed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1lN-B2-9ZK"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -97,6 +103,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="progressBar" destination="niL-bw-NQs" id="4tT-Bv-S6t"/>
+                        <outlet property="questionLbl" destination="jzi-M3-cbL" id="ulO-4s-xkp"/>
+                        <outlet property="questionNumberLbl" destination="3Ud-Kv-44S" id="gds-HZ-km1"/>
+                        <outlet property="scoreLbl" destination="svA-1m-9na" id="Wpp-b0-WYU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
