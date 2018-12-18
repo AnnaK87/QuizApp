@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		67AED0AB21C90BA1006F55BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AED0AA21C90BA1006F55BB /* AppDelegate.swift */; };
-		67AED0AD21C90BA1006F55BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AED0AC21C90BA1006F55BB /* ViewController.swift */; };
+		67AED0AD21C90BA1006F55BB /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AED0AC21C90BA1006F55BB /* MainVC.swift */; };
 		67AED0B021C90BA1006F55BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67AED0AE21C90BA1006F55BB /* Main.storyboard */; };
 		67AED0B221C90BA3006F55BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67AED0B121C90BA3006F55BB /* Assets.xcassets */; };
 		67AED0B521C90BA3006F55BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67AED0B321C90BA3006F55BB /* LaunchScreen.storyboard */; };
+		67AED0C021C91327006F55BB /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AED0BF21C91327006F55BB /* Button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		67AED0A721C90BA0006F55BB /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67AED0AA21C90BA1006F55BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		67AED0AC21C90BA1006F55BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		67AED0AC21C90BA1006F55BB /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		67AED0AF21C90BA1006F55BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67AED0B121C90BA3006F55BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67AED0B421C90BA3006F55BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67AED0B621C90BA3006F55BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67AED0BF21C91327006F55BB /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		67AED0A921C90BA0006F55BB /* QuizApp */ = {
 			isa = PBXGroup;
 			children = (
+				67AED0BC21C90CA0006F55BB /* Model */,
+				67AED0BE21C90CFA006F55BB /* View */,
+				67AED0BD21C90CAB006F55BB /* Controller */,
 				67AED0AA21C90BA1006F55BB /* AppDelegate.swift */,
-				67AED0AC21C90BA1006F55BB /* ViewController.swift */,
 				67AED0AE21C90BA1006F55BB /* Main.storyboard */,
 				67AED0B121C90BA3006F55BB /* Assets.xcassets */,
 				67AED0B321C90BA3006F55BB /* LaunchScreen.storyboard */,
 				67AED0B621C90BA3006F55BB /* Info.plist */,
 			);
 			path = QuizApp;
+			sourceTree = "<group>";
+		};
+		67AED0BC21C90CA0006F55BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67AED0BD21C90CAB006F55BB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				67AED0AC21C90BA1006F55BB /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		67AED0BE21C90CFA006F55BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67AED0BF21C91327006F55BB /* Button.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +162,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67AED0AD21C90BA1006F55BB /* ViewController.swift in Sources */,
+				67AED0AD21C90BA1006F55BB /* MainVC.swift in Sources */,
+				67AED0C021C91327006F55BB /* Button.swift in Sources */,
 				67AED0AB21C90BA1006F55BB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
