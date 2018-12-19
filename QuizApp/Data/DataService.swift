@@ -25,7 +25,9 @@ class DataService {
                     Question(question: "Dolphins call each other by name.", answer: true),
                     Question(question: "Three dogs survived the Titanic sinking out of 12 canines on board.", answer: true),
                     Question(question: "Roses are used as an alarm system in the vineyards.", answer: true),
-                    Question(question: "About 40 million people visit Times Square each year.", answer: true)
+                    Question(question: "About 40 million people visit Times Square each year.", answer: true),
+                    Question(question: "Coca-Cola originally contained cocaine.", answer: true),
+                    Question(question: "The first big Hollywood \"summer blockbuster\" was Jaws.", answer: true)
     ]
     
     func getQuestion() -> [Question] {

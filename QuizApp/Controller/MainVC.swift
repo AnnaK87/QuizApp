@@ -40,6 +40,7 @@ class MainVC: UIViewController {
         updateScoreLbl()
         updateQuestionNumberLbl()
         updateProgressBar()
+        print(score)
     }
     
     func updateQuestion() {
@@ -56,7 +57,6 @@ class MainVC: UIViewController {
     
     func updateProgressBar() {
         let progress = Float(index + 1) / Float(DataService.instance.getQuestion().count)
-       
         progressBar.setProgress(progress, animated: true)
     }
     
@@ -70,12 +70,13 @@ class MainVC: UIViewController {
     }
     
     func presentAlert() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.55) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.65) {
             let alert = UIAlertController(title: "Quiz finished", message: "Your score: \(self.score)", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Start Over", style: .default, handler: { action in
                 self.startOver()
             }))
             self.present(alert, animated: true, completion: nil)
+            self.updateScoreLbl()
         }
         }
 }
