@@ -25,12 +25,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="niL-bw-NQs">
-                                <rect key="frame" x="0.0" y="635" width="375" height="2"/>
+                                <rect key="frame" x="0.0" y="657" width="375" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="Yuv-Us-WWf"/>
+                                </constraints>
                                 <color key="progressTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="trackTintColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" red="0.042761538039999998" green="0.64259183679999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ud-Kv-44S">
-                                <rect key="frame" x="16" y="590" width="35" height="25"/>
+                                <rect key="frame" x="16" y="612" width="35" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="cw3-NJ-U7S"/>
                                     <constraint firstAttribute="height" constant="25" id="gUe-oz-GvT"/>
@@ -40,7 +43,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svA-1m-9na">
-                                <rect key="frame" x="288" y="590" width="71" height="25"/>
+                                <rect key="frame" x="288" y="612" width="71" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="71" id="VQV-Zc-tdj"/>
                                 </constraints>
@@ -84,7 +87,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.072048038260000002" green="0.68230465340000002" blue="0.97781170689999997" alpha="0.7539597603" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.042761538037302316" green="0.64259183681839205" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="3Ud-Kv-44S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="28H-Fq-rM6"/>
                             <constraint firstItem="niL-bw-NQs" firstAttribute="top" secondItem="3Ud-Kv-44S" secondAttribute="bottom" constant="20" id="2vu-df-GHM"/>
@@ -99,7 +102,7 @@
                             <constraint firstItem="jzi-M3-cbL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="gra-R8-QGJ"/>
                             <constraint firstItem="Nxu-aW-3FS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kIT-Ng-2mc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="svA-1m-9na" secondAttribute="trailing" constant="16" id="wi3-Ep-9VS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="niL-bw-NQs" secondAttribute="bottom" constant="30" id="yz2-Us-NHs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="niL-bw-NQs" secondAttribute="bottom" id="yz2-Us-NHs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

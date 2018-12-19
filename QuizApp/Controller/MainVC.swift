@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class MainVC: UIViewController {
     
@@ -29,6 +30,9 @@ class MainVC: UIViewController {
         answer = sender.tag == 0 ? true : false
         if answer == DataService.instance.getQuestion()[index].answer {
             score += 1
+            ProgressHUD.showSuccess("Correct")
+        } else {
+            ProgressHUD.showError("Wrong")
         }
         guard index != (DataService.instance.getQuestion().count - 1) else { return startOver()}
         index += 1
@@ -52,6 +56,7 @@ class MainVC: UIViewController {
     
     func updateProgressBar() {
         let progress = Float(index + 1) / Float(DataService.instance.getQuestion().count)
+       
         progressBar.setProgress(progress, animated: true)
     }
     
