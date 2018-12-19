@@ -19,40 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The date of birth of famous Russian writer Alexand Pushkin is June 6, 1799 " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="jzi-M3-cbL">
-                                <rect key="frame" x="33" y="53" width="309" height="215.5"/>
+                                <rect key="frame" x="33" y="53" width="309" height="233.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="niL-bw-NQs">
-                                <rect key="frame" x="0.0" y="657" width="375" height="10"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="10" id="Yuv-Us-WWf"/>
-                                </constraints>
-                                <color key="progressTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="trackTintColor" red="0.042761538039999998" green="0.64259183679999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ud-Kv-44S">
-                                <rect key="frame" x="16" y="612" width="35" height="25"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="cw3-NJ-U7S"/>
-                                    <constraint firstAttribute="height" constant="25" id="gUe-oz-GvT"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svA-1m-9na">
-                                <rect key="frame" x="288" y="612" width="71" height="25"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="71" id="VQV-Zc-tdj"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="Nxu-aW-3FS">
-                                <rect key="frame" x="51" y="310.5" width="273" height="46"/>
+                                <rect key="frame" x="51" y="467" width="273" height="46"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZJ-a6-jvm" customClass="Button" customModule="QuizApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="115" height="46"/>
@@ -86,6 +59,33 @@
                                     <constraint firstItem="eSY-JO-Dh9" firstAttribute="width" secondItem="DZJ-a6-jvm" secondAttribute="width" id="u7g-9c-Xae"/>
                                 </constraints>
                             </stackView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="niL-bw-NQs">
+                                <rect key="frame" x="0.0" y="657" width="375" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="Yuv-Us-WWf"/>
+                                </constraints>
+                                <color key="progressTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="trackTintColor" red="0.042761538039999998" green="0.64259183679999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ud-Kv-44S">
+                                <rect key="frame" x="16" y="612" width="35" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="cw3-NJ-U7S"/>
+                                    <constraint firstAttribute="height" constant="25" id="gUe-oz-GvT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svA-1m-9na">
+                                <rect key="frame" x="288" y="612" width="71" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="71" id="VQV-Zc-tdj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.042761538037302316" green="0.64259183681839205" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -96,10 +96,10 @@
                             <constraint firstItem="svA-1m-9na" firstAttribute="centerY" secondItem="3Ud-Kv-44S" secondAttribute="centerY" id="Sis-mq-Epl"/>
                             <constraint firstItem="jzi-M3-cbL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="Ssk-b6-iyH"/>
                             <constraint firstAttribute="trailing" secondItem="niL-bw-NQs" secondAttribute="trailing" id="VnA-Vs-Lcq"/>
-                            <constraint firstItem="Nxu-aW-3FS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Yh0-xu-bUo"/>
-                            <constraint firstItem="Nxu-aW-3FS" firstAttribute="top" secondItem="jzi-M3-cbL" secondAttribute="bottom" constant="42" id="dlO-ZJ-L49"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nxu-aW-3FS" secondAttribute="bottom" multiplier="1.3" id="W3a-UP-2qX"/>
                             <constraint firstItem="svA-1m-9na" firstAttribute="height" secondItem="3Ud-Kv-44S" secondAttribute="height" id="f50-Z7-fUo"/>
                             <constraint firstItem="jzi-M3-cbL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="gra-R8-QGJ"/>
+                            <constraint firstItem="jzi-M3-cbL" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.35" id="k31-tS-fDO"/>
                             <constraint firstItem="Nxu-aW-3FS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kIT-Ng-2mc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="svA-1m-9na" secondAttribute="trailing" constant="16" id="wi3-Ep-9VS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="niL-bw-NQs" secondAttribute="bottom" id="yz2-Us-NHs"/>
@@ -115,7 +115,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+            <point key="canvasLocation" x="136.23188405797103" y="132.58928571428572"/>
         </scene>
     </scenes>
 </document>

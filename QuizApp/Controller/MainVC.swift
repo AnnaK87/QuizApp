@@ -34,7 +34,7 @@ class MainVC: UIViewController {
         } else {
             ProgressHUD.showError("Wrong")
         }
-        guard index != (DataService.instance.getQuestion().count - 1) else { return startOver()}
+        guard index != (DataService.instance.getQuestion().count - 1) else { return presentAlert()}
         index += 1
         updateQuestion()
         updateScoreLbl()
@@ -68,4 +68,14 @@ class MainVC: UIViewController {
         updateQuestionNumberLbl()
         updateProgressBar()
     }
+    
+    func presentAlert() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.55) {
+            let alert = UIAlertController(title: "Quiz finished", message: "Your score: \(self.score)", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Start Over", style: .default, handler: { action in
+                self.startOver()
+            }))
+            self.present(alert, animated: true, completion: nil)
+        }
+        }
 }
